@@ -2,6 +2,7 @@ import ccxt
 import pandas as pd
 import numpy as np
 from datetime import date, datetime, timezone, tzinfo
+import time
 import schedule
 from pprint import pprint
 
