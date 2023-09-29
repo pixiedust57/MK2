@@ -4,6 +4,7 @@ import numpy as np
 from datetime import date, datetime, timezone, tzinfo
 import schedule
 from pprint import pprint
+import streamlit as st
 
 binance = ccxt.binanceusdm({
     'enableRateLimit': True,
@@ -329,6 +330,8 @@ def bot():
 
     height = df_h.iloc[-2]['check1']
     print(f'is this the right candle ? : {height}')
+    st.write(f'is this the right candle ? : {height}')
+    st.write('hello')
 
     open_size = pos_size / 2
 
