@@ -1,12 +1,9 @@
 import ccxt
 import pandas as pd
 import numpy as np
-import dontshare_config as ds
 from datetime import date, datetime, timezone, tzinfo
-import time
 import schedule
 from pprint import pprint
-import dontshare_config as dns
 
 binance = ccxt.binanceusdm({
     'enableRateLimit': True,
